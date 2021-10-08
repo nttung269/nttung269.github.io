@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box; 
+}
+.body {
+    margin: 0;
+ }
+.container {
+
+    background-color: darkgrey;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+img {
+    padding: 25px;
+    width: 30%;
+}
+
+img:hover {
+    transform: scale(1.2);
+    overflow: visible;
+
+}
+
+.container img {
+    transition: 0.3s;
+}
