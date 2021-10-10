@@ -4,7 +4,8 @@ html {
     height: 100%;
     display: flex;
     justify-content: center; 
-    align-items: center 
+    align-items: center ;
+
     
 }
 
@@ -12,66 +13,26 @@ html {
 body {
     display: flex;
     justify-content: center; 
-    align-items: center 
+    align-items: center ;
+    position: relative;
     
 }
 
-.heart {
+img {
 
-	animation: heart .25s infinite alternate;
-	transform-origin: center;
-
+    animation: beat 5s 1;
+    animation-iteration-count: infinite ;
+    transition: 1.3s;
 }
 
-
-@keyframes "heart" {
- to {
-    -webkit-transform: scale(1.4);
-   	-moz-transform: scale(1.4);
-   	-o-transform: scale(1.4);
-   	-ms-transform: scale(1.4);
-   	transform: scale(1.4);
- }
-
-
-@-moz-keyframes beat {
- to {
-   -moz-transform: scale(1.4);
-   transform: scale(1.4);
- }
+@keyframes beat {
+    30% { transform: scale( 1 );  }
+    35% { transform: scale( 1.5 );  }
+    40% { transform: scale( 1.7 );  }
+    60% { transform: scale( 1 );  }
+    65% { transform: scale( 1.5);  }
+    70% { transform: scale( 1.7 );  }             
+     
+ 
 
 }
-
-@-webkit-keyframes "beat" {
- to {
-   -webkit-transform: scale(1.4);
-   transform: scale(1.4);
- }
-
-
-
-@-ms-keyframes "beat" {
- to {
-   -ms-transform: scale(1.4);
-   transform: scale(1.4);
- }
-
-
-
-@-o-keyframes "beat" {
- to {
-   -o-transform: scale(1.4);
-   transform: scale(1.4);
- }
-
-
-
-
-
-
-
-
-
-
-
-
