@@ -29,10 +29,7 @@ img {
     30% { transform: scale( 1 );  }
     35% { transform: scale( 1.5 );  }
     40% { transform: scale( 1.7 );  }
-    60% { transform: scale( 1 );  }
-    65% { transform: scale( 1.5);  }
-    70% { transform: scale( 1.7 );  }             
-     
- 
-
+    50% { transform: scale( 1 );  }
+    55% { transform: scale( 1.5);  }
+    60% { transform: scale( 1.7 );  }
 }
