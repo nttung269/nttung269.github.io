@@ -1,0 +1,53 @@
+* {
+    box-sizing: border-box; 
+
+}
+
+.body {
+    margin: 0;
+    background-color: darkgrey;
+ }
+.container {
+
+    
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 20px;
+   
+}
+
+a {
+    padding: 20px;
+    margin: 20px;
+    width: 30%;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    
+    
+}
+
+img:hover {
+    transform: scale(1.2);
+    overflow: hidden;
+    border-width: 5px; 
+    border-style: outset;
+    
+}
+
+.container img {
+    transition: 0.3s;
+}
+p {
+    text-align: center;
+    width: 20px;
+}
+
+.container .a {
+    text-decoration: none;
+}
+
+img{
+    border-width: 10px; 
+}
