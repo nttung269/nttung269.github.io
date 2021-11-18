@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+  }
+  a {
+    text-decoration: none;
+  }
+  body {
+    margin: 0;
+    padding: 0;
+    background: #3498db;
+   }
+  
+  .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .account {
+    color: white;
+    font-weight: 500px;
+    
+  }
+  
+  .box {
+    background: white;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 500px;
+    position: relative;
+    text-align: center;
+  }
+  
+  .box h1 {
+    color: white;
+    font-weight: 500;
+    position: absolute;
+    top: -20px;
+    left: 0;
+    transform: translateY(-100%)
+  }
+  
+  .center{
+    display: flex;
+    justify-content: space-between
+  }
+  .input{
+    padding: 15px 0; 
+    margin-bottom: 15px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+   }
+    
+  
+  .login{
+    background: #3498db;
+    color: rgb(228, 228, 228);
+    padding: 10px; 
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+  
+  }
+  .signup{
+    display: flex;
+    justify-content: center;  
+    padding: 10px;
+    margin-top: 10px;
+  }
+  #message {
+    color: green;
+    display: none;
+    text-align: center;
+  }

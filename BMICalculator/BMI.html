@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMICalculator</title>
+    <link rel="stylesheet" href="BMI.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+</head>
+
+<body>
+    <div class="container">
+
+        <div class="box" action="index.html" method="post">
+            Weight:
+            <input type="height" class="input" name="weight" placeholder="Enter height" id="height" value="">
+            Height:
+            <input type="weight" class="input" name="height" placeholder="Enter weight" id="weight" value="">
+            <button type="button" class="login" onclick="result()">Result</button>
+            <p class="resultDiv"> </p>
+
+
+        </div>
+    </div>
+
+    <script>
+
+
+        function result() {
+
+            let weight = $("#weight").val();
+            let height = $("#height").val();
+            let resultBmI = weight / (height * height);
+
+
+
+
+            function bmiState() {
+                if (resultBmI < 16.9) {
+                    return "Very underweight";
+                }
+                if (resultBmI > 17 && resultBmI < 18.4) {
+                    return "Under weight";
+                }
+                if (resultBmI > 18.5 && resultBmI < 24.9) {
+                    return "Normal weight";
+                }
+                if (resultBmI > 25 && resultBmI < 29.9) {
+                    return "Overweight";
+                }
+                if (resultBmI > 30 && resultBmI < 34.9) {
+                    return "Overweight class 1";
+                }
+                if (resultBmI > 35 && resultBmI < 40) {
+                    return "Overweight class 2";
+                }
+                if (resultBmI > 40) {
+                    return "Overweight class 3";
+                }
+            }
+            $(".resultDiv").html(resultBmI + " -> " + bmiState())
+
+
+        }
+
+
+
+    </script>
+
+
+
+</body>
+
+</html>
