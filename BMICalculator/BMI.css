@@ -25,12 +25,15 @@
     padding: 20px;
     width: 500px;
     position: relative;
+    height: 420px;
+    justify-content: space-around;
   }
   
   .input{
     padding: 15px 0; 
     margin-bottom: 15px;
     border-bottom: 1px solid #ccc;
+
    }
     
   

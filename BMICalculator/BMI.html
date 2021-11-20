@@ -15,10 +15,10 @@
     <div class="container">
 
         <div class="box" action="index.html" method="post">
-            Weight:
-            <input type="height" class="input" name="weight" placeholder="Enter height" id="height" value="">
-            Height:
-            <input type="weight" class="input" name="height" placeholder="Enter weight" id="weight" value="">
+            Height (cm):
+            <input type="height" class="input" name="height" required placeholder="Enter height" id="height" value="">
+            Weight (kg):
+            <input type="weight" class="input" name="weight" required placeholder="Enter weight" id="weight" value="">
             <button type="button" class="login" onclick="result()">Result</button>
             <p class="resultDiv"> </p>
 
@@ -28,17 +28,16 @@
 
     <script>
 
-
         function result() {
 
             let weight = $("#weight").val();
-            let height = $("#height").val();
+            let height = ($("#height").val()) / 100;
             let resultBmI = weight / (height * height);
-
-
+            
 
 
             function bmiState() {
+
                 if (resultBmI < 16.9) {
                     return "Very underweight";
                 }
@@ -59,6 +58,9 @@
                 }
                 if (resultBmI > 40) {
                     return "Overweight class 3";
+                }
+                if (weight ==0 || height == 0 || weight == '' || height == '' || weight != Number() || height != Number()){
+                    return "Please enter your height and weight";
                 }
             }
             $(".resultDiv").html(resultBmI + " -> " + bmiState())
