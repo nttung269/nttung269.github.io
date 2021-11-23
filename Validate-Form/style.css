@@ -15,11 +15,11 @@ body {
 h1 {
   color: #fff;
 }
-.login {
+.login{
+  
   margin: auto;
-  max-width: 686px;
-  height: 95vh;
-  padding: 50px;
+  max-width: 400px;
+  height: 100vh;
 }
 form {
   border: 1px double rgb(71, 93, 141);
@@ -33,7 +33,7 @@ form {
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -88,7 +88,8 @@ a {
 
 .fa-eye:before {
   position: absolute;
-  margin-top: -60px;
+  margin-top: -57px;
+    left: 255px;
 }
 .alert-wrong-password {
   position: absolute;
